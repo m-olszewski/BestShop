@@ -9,8 +9,72 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-white);
+    font-family: var(--font-primary);
+}
+
+a {
+    cursor: pointer;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+.header {
+    box-shadow: 0px 3px 6px #00000029;
+    height: 70px;
+}
+
+.top__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu__list {
+    display: flex;
+    text-align: center;
+}
+
+.menu__list li {
+    margin-left: 65px;
+}
+
+.menu__list li a {
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    font-size: 0.6875rem;
+    letter-spacing: 0.205rem;
+    color: var(--color-grey);
+    text-decoration: none;
+    padding: 28px 15px 27px 15px;
+}
+
+.menu__list li a:hover {
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-primary);
 }
