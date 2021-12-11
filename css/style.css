@@ -24,11 +24,17 @@ html {
 body {
     background: var(--color-white);
     font-family: var(--font-primary);
+    color: var(--color-black);
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
 }
 
 .container {
@@ -101,14 +107,8 @@ a {
     padding: 20px 0 38px 0;
     font-size: 1rem;
     font-family: var(--font-secondary);
-    font-weight: normal;
 }
 
-.opening__title,
-.opening__text {
-    font-weight: normal;
-    color: var(--color-black);
-}
 
 .opening__primary__btn {
     font-family: var(--font-secondary);
@@ -122,17 +122,18 @@ a {
 }
 
 /*--------------------------------------------------KONIEC OPENING--------------------------------------------------*/
-
+.statistics {
+    padding-top: 105px;
+}
 .statistic__title {
-    margin: 100px 0;
-    color: var(--color-black);
-    font-size: 2.25rem;
+    margin-bottom: 100px;
     text-align: center;
 }
 
 .statistics__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 185px;
     margin: 100px 0 120px 0;
 }
 
@@ -146,22 +147,44 @@ a {
     padding: 0 20px;
 }
 
-.statistics__circle {
+.statistics__single:first-child img {
+    top: 5px;
+}
+
+.statistics__single:nth-child(2) img {
+    top: 14px;
+}
+
+.statistics__single:last-child img {
+    top: 8px;
+}
+
+.statistics__single:first-child .statistics__circle {
     background: var(--color-redish);
+}
+
+.statistics__single:nth-child(2) .statistics__circle {
+    background: var(--color-primary);
+}
+
+.statistics__single:last-child .statistics__circle {
+    background: var(--color-green);
+}
+
+.statistics__circle {
     height: 63px;
     width: 63px;
     border-radius: 50%;
     position: relative;
 }
 
-.statistics_icon {
+.statistics__icon {
     position: absolute;
     left: 45%;
-    top: 0;
 }
 
 .statistic__number {
-    color: var(--color-black);
+
     font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: 0.3725rem;
@@ -171,4 +194,150 @@ a {
 .statistic__text {
     color: var(--color-grey);
     font-size: 1.0625rem;
+    line-height: 1.25rem;
 }
+
+/*-------------------------------------------------KONIEC STATISTICS-------------------------------------------------*/
+
+.benefits {
+    background: var(--color-light-grey);
+    padding: 105px 0;
+}
+
+.benefits__main {
+    padding: 0 114px;
+}
+
+.benefits__content {
+    background: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 370px;
+    margin-bottom: 37px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.benefits__content:last-child {
+    background: none;
+    border: none;
+    margin-bottom: 105px;
+}
+
+.benefits__textArea {
+    max-width: 416px;
+}
+
+.benefits__title {
+    margin-bottom: 30px;
+}
+
+.benefits__text {
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+    line-height: 1.375rem;
+}
+
+.benefits__text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-redish);
+    display: block;
+    margin-top: 50px;
+}
+
+.benefits__content:nth-child(2) .benefits__textArea .benefits__text::after {
+    background-color: var(--color-primary);
+}
+
+.benefits__content:nth-child(3) .benefits__textArea .benefits__text::after {
+    background-color: var(--color-green);
+}
+
+.benefits__img {
+    position: relative;
+    z-index: 9;
+}
+
+.notebook {
+    position: relative;
+    margin-bottom: 36px;
+    margin-right: 118px;
+}
+
+.benefits__content:first-child .benefits__textArea {
+    margin: 91px 36px;
+}
+
+.benefits__content:nth-child(2) .benefits__textArea {
+    margin: 70px 20px;
+}
+
+.benefits__content:last-child .benefits__textArea {
+    background: var(--color-white);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    height: 100%;
+    padding: 70px 35px;
+    max-width: 623px;
+}
+
+.trumpet {
+    height: 100%;
+    background: var(--color-green);
+    margin-left: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.phone {
+    position: relative;
+    margin-left: 70px;
+    margin-bottom: 13px;
+}
+
+.notebook img {
+    height: 219px;
+}
+
+.phone img {
+    height: 328px;
+}
+
+.trumpet img {
+    height: 208px;
+    margin-right: 10px;
+    margin-top: 17px;
+}
+
+.notebook::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    border-radius: 41px;
+    background: var(--color-redish);
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+}
+
+.phone:before {
+    content: "";
+    border-radius: 50%;
+    height: 320px;
+    width: 320px;
+    background: var(--color-primary);
+    position: absolute;
+    bottom: 23px;
+}
+
+/*-------------------------------------------------KONIEC BENEFITS-------------------------------------------------*/
+
