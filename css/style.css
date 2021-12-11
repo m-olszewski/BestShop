@@ -125,6 +125,7 @@ h2 {
 .statistics {
     padding-top: 105px;
 }
+
 .statistic__title {
     margin-bottom: 100px;
     text-align: center;
@@ -222,7 +223,7 @@ h2 {
 .benefits__content:last-child {
     background: none;
     border: none;
-    margin-bottom: 105px;
+    margin-bottom: 0;
 }
 
 .benefits__textArea {
@@ -294,7 +295,6 @@ h2 {
     flex-grow: 1;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
-    border-radius: 5px;
 }
 
 .phone {
@@ -341,3 +341,135 @@ h2 {
 
 /*-------------------------------------------------KONIEC BENEFITS-------------------------------------------------*/
 
+.prices__main {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices__chooseOptions {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.prices_singleOptionBox {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    width: 372px;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.prices__option-basic {
+    border: 1px solid var(--color-redish);
+}
+.prices__option-pro {
+    border: 1px solid var(--color-primary);
+    width: 405px;
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+}
+.prices__option-premium {
+    border: 1px solid var(--color-green);
+}
+
+.prices__details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+}
+.prices__option-pro .prices__details {
+    margin-bottom: 48px;
+}
+.prices__option-premium .prices__details {
+    margin-bottom: 48px;
+}
+.prices__option-pro .prices__included__list {
+    margin-bottom: 67px;
+}
+
+.prices__singleOptionBox__title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #13253B;
+    margin-bottom: 24px;
+}
+
+.prices__amount {
+    font-size: 2.875rem;
+    font-weight: 300;
+    font-family: var(--font-secondary);
+    color: var(--color-redish)
+}
+
+.prices__limited {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #13253B;
+    margin-top: 17px;
+}
+
+
+.prices__included__list {
+    margin-bottom: 70px;
+}
+
+.prices__option-pro .prices__included__list .prices__list__element {
+    line-height: 2.875rem;
+}
+
+.prices__list__element {
+    font-size: 0.875rem;
+    line-height: 2.5625rem;
+    font-family: var(--font-secondary);
+}
+
+.prices__list__element::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-image: url("../assets/Ckechmark-1.svg");
+    margin-right: 10px;
+}
+
+.notIncluded::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.prices__btn {
+    color: var(--color-white);
+    border-radius: 23px;
+    padding: 16px 57px;
+    position: absolute;
+    transform: translateY(50%);
+    font-size: 0.8125rem;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+}
+
+.prices__btn-basic {
+    background: var(--color-redish);
+}
+.prices__btn-pro {
+    background: var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+    padding: 16px 65px;
+}
+.prices__btn-premium {
+    background: var(--color-green);
+}
+
+.prices__option-pro .prices__details .prices__amount {
+    color: var(--color-primary);
+}
+
+.prices__option-premium .prices__details .prices__amount {
+    color: var(--color-green);
+}
