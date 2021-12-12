@@ -100,6 +100,7 @@ h2 {
 
 .opening__title {
     font-size: 3.0625rem;
+    line-height: 3.5625rem;
     text-transform: capitalize;
 }
 
@@ -342,7 +343,7 @@ h2 {
 /*-------------------------------------------------KONIEC BENEFITS-------------------------------------------------*/
 
 .prices__main {
-    padding: 100px 0;
+    padding: 100px 0 180px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -371,11 +372,13 @@ h2 {
 .prices__option-basic {
     border: 1px solid var(--color-redish);
 }
+
 .prices__option-pro {
     border: 1px solid var(--color-primary);
     width: 405px;
     box-shadow: 5px 10px 27px var(--color-primary-shadow);
 }
+
 .prices__option-premium {
     border: 1px solid var(--color-green);
 }
@@ -384,12 +387,15 @@ h2 {
     margin-top: 34px;
     margin-bottom: 60px;
 }
+
 .prices__option-pro .prices__details {
     margin-bottom: 48px;
 }
+
 .prices__option-premium .prices__details {
     margin-bottom: 48px;
 }
+
 .prices__option-pro .prices__included__list {
     margin-bottom: 67px;
 }
@@ -414,7 +420,6 @@ h2 {
     color: #13253B;
     margin-top: 17px;
 }
-
 
 .prices__included__list {
     margin-bottom: 70px;
@@ -457,11 +462,13 @@ h2 {
 .prices__btn-basic {
     background: var(--color-redish);
 }
+
 .prices__btn-pro {
     background: var(--color-primary);
     box-shadow: 5px 10px 27px var(--color-primary-shadow);
     padding: 16px 65px;
 }
+
 .prices__btn-premium {
     background: var(--color-green);
 }
@@ -472,4 +479,193 @@ h2 {
 
 .prices__option-premium .prices__details .prices__amount {
     color: var(--color-green);
+}
+
+/*-------------------------------------------------KONIEC PRICES--------------------------------------------------*/
+
+.contact__main {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 220px;
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.contact__textArea,
+.contact__formArea {
+    width: 50%;
+}
+
+.contact__title {
+    font-size: 3.0625rem;
+    color: var(--color-black);
+    line-height: 3.5625rem;
+    margin-bottom: 22px;
+}
+
+.contact__text {
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+    line-height: 1.375rem;
+    margin-bottom: 40px;
+}
+
+.contact__mail-phone {
+    display: flex;
+    gap: 20px;
+}
+
+.contact__email,
+.contact__phone {
+    /*font-weight: 600;*/
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+    line-height: 1.375rem;
+    color: var(--color-grey);
+    display: flex;
+    align-items: center;
+}
+
+.contact__email::before,
+.contact__phone::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+}
+
+.contact__email::before {
+    background-image: url("../assets/Mail Icon.svg");
+}
+
+.contact__phone::before {
+    background-image: url("../assets/Phone Icon.svg");
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__form:first-of-type {
+    margin-bottom: 42px;
+}
+
+.contact__form:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.contact__form:last-of-type {
+    margin-bottom: 20px;
+}
+
+.contact__form__userName,
+.contact__form__email {
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.205rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.contact__form__chk {
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    color: var(--color-grey);
+    font-weight: normal;
+    text-transform: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.contact__form__chk input {
+    display: none;
+}
+
+.contact__form__chk input:checked + span {
+    background-image: url(../assets/Checkmark.svg);
+    background-size: 67%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact__form__chk span {
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: var(--color-white);
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+
+.form__user,
+.form__email {
+    border: none;
+    border-bottom: 1px solid #95989A;
+    line-height: 2.625rem;
+}
+
+.page__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact__form__btn {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    padding: 20px 97px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 35px;
+    border: none;
+}
+
+/*-------------------------------------------------KONIEC KONTAKT--------------------------------------------------*/
+.footer {
+    height: 89px;
+    box-shadow: 0px -5px 40px #00000029;
+    background: var(--color-light-grey);
+}
+
+.footer__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__logo {
+    color: var(--color-primary);
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.footer__copyright {
+    font-family: var(--font-secondary);
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+    color: var(--color-grey)
+}
+
+.footer__links img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 20px;
 }
